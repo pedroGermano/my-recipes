@@ -15,6 +15,12 @@
   "linter": {
     "enabled": true,
     "rules": {
+      "correctness": {
+        "noUnusedFunctionParameters": "error"
+      },
+      "a11y": {
+        "useKeyWithClickEvents": "error"
+      },
       "recommended": true
     }
   },

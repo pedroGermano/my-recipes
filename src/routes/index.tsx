@@ -1,5 +1,6 @@
 import { PathRoutes } from "@/@types/enums/route.enum";
 import RootLayout from "@/components/ui/rootLayout";
+import { NewRecipes } from "@/pages/new-recipes";
 import { NotFound } from "@/pages/not-found";
 import { createBrowserRouter, RouterProvider } from "react-router";
 
@@ -9,7 +10,7 @@ const router = createBrowserRouter([
 		element: <RootLayout />,
 		children: [
 			{ path: PathRoutes.HOME, element: <h1>Home</h1> },
-			{ path: PathRoutes.NEW_RECIPE, element: <h1>Nova Receita</h1> },
+			{ path: PathRoutes.NEW_RECIPE, element: <NewRecipes /> },
 			{
 				path: PathRoutes.FAVORITE_RECIPES,
 				element: <h1>Receitas Favoritas</h1>,
